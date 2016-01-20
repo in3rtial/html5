@@ -1,63 +1,117 @@
-# Week 2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title> Week 2 </title> </head>
+
+<body>
+
+<nav role="navigation">
+        <a href=#DOM>DOM</a>
+        <a href=#basics>DOM Basics</a>
+        <a href=#validators>HTML5 validators</a>
+</nav>
 
 
-## DOM (Document Object Model)
-
-### Basics of DOM
-- basis of HTML5 is that HTML, CSS, DOM and Javascript are the basic building blocks
-
-- DOM provides tree-like structures that pages should follow (template of sorts)
-
-- CS (Computer Science) people love trees (that they do)
-
-- HTML is built on the DOM
-    - root structure (<html>)
-    - head, body, etc...
-
-- 3 parts of a well-formed document (HTML5)
-    1- doctype: version of HTML under use
-        - tag: <!DOCTYPE html>
-        - much simpler now in html5
-    2- head: some metadata; mostly invisible to user (except title)
-        - tag: <head>
-        - metadata: language, title
-        - supporting files: javascript, styling, add-ons (dependencies)
-        - title is the name displayed on the tab
-    3- body: content to display; 
-
-### Validators
-- can validate the code using online parsers/checkers
-    - often forget to close tags
-    - evaluation of the actual number of errors is hard (cascade of errors...)
-    - browsers often correct mistakes making mistakes invisible which is dangerous
-- looking good is no substitution for good testing
+<h1 id="week2">Week 2</h1>
 
 
-## HTML5 Tags and Syntax (generics)
+<h2 id="DOM">DOM (Document Object Model) </h2>
 
 
-### Tags basics
-- tags have a beginning <x> and ending tag </x> (where x is any tag)
-    - some tags are self-closing (<img src="x.gif"> includes all necessary information)
-    - some tags have attributes
+<h3 id="basics"> Basics of DOM </h3>
 
-- tags documentation is easily available online
+<ul>
+    <li> basis of HTML5 is that HTML, CSS, DOM and Javascript are the basic building blocks</li>
+
+    <li> DOM provides tree-like structures that pages should follow (template of sorts)</li>
+
+    <li> CS (Computer Science) people love trees (that they do)</li>
+
+    <li> HTML is built on the DOM
+        <ul>
+            <li> root structure (&lt;html&gt;) </li>
+            <li> head, body, etc...</li>
+        </ul>
+    </li>
+    <li> 3 parts of a well-formed document (HTML5)
+        <ol>
+            <li> doctype: version of HTML under use
+                <ul>
+                    <li> tag: &lt;!DOCTYPE html&gt;</li>
+                    <li> much simpler now in html5</li>
+                </ul>
+            </li>
+            <li> head: some metadata; mostly invisible to user (except title)
+                <ul>
+                    <li>tag: &lt;head&gt;</li>
+                    <li>metadata: language, title</li>
+                    <li>supporting files: javascript, styling, add-ons (dependencies)</li>
+                    <li>title is the name displayed on the tab</li>
+                </ul>
+             </li>
+             <li>body: content to display</li>
+        </ol>
+    </li>
+</ul>
+
+<h3 id="validators"> Validators</h3>
+
+<ul>
+    <li>can validate the code using online parsers/checkers
+        <ul>
+            <li>often forget to close tags</li>
+            <li>evaluation of the actual number of errors is hard (cascade of errors...)</li>
+            <li>browsers often correct mistakes making mistakes invisible which is dangerous</li>
+        </ul>
+    </li>
+    <li>looking good is no substitution for good testing</li>
+</ul>
 
 
-### Display
-- important attribute of an element is its display
-    - block
-        - take amount of width and height
-        - 
-    - inline
-        - take as much space as needed
+<h2 id=tagsAndSyntax> HTML5 Tags and Syntax (generics) </h2>
 
-### Common tags
-- headings [block]
-    - <h1>..<h6>
-    - can have syntax and semantics
-    - don't juste take into account the looks, rank by importance
-    - can confuse the user
+
+<h3 id="tagsBasics"> Tags basics </h3>
+<ul>
+    <li>tags have a beginning <x> and ending tag </x> (where x is any tag)
+        <ul>
+            <li> some tags are self-closing (&lt;img src="x.gif"&gt; includes all the necessary information</li>
+            <li> some tags have attributes</li>
+        </ul>
+    </li>
+    <li> tags documentation is easily available online</li>
+</ul>
+
+    
+<h3 id="display"> Display</h3>
+    <ul>
+        <li>important attribute of an element is its display</li>
+        <li>block: take amount of width and heigh</li>
+        <li>inline: take as much space as needed</li>
+    </ul>
+    
+
+    <h3 id="commonTags"> Common tags </h3>
+    <ul>
+        <li> headings [block]
+            <ul>
+                <li> &lt;h2&gt;..&lt;h6&gt; </li>
+                <li>can have syntax and semantics </li> 
+                <li> don't juste take into account the looks, rank by importance</li>
+                <li> can confuse the user </li>
+            </ul>
+        </li>
+        
+        <li>
+        </li>
+    
+    
+    </ul>
+    - 
+    - 
+    - 
 - paragraphs [block]
     - <p> .. </p>
     - should only contain inline elements
@@ -80,7 +134,7 @@
     - self-closing
 
 
-### Attributes
+<h3> Attributes
 - additional information about an element
     - often facultative
 
@@ -89,7 +143,7 @@
 - attributes come in pairs [key:value]
 
 
-### Images (example of attributes)
+<h3> Images (example of attributes)
 - <img src="frontImage.jpg" alt="front image">
 - images rarely work the first time (many possible problems)
     - too big, too smal, broken link, etc.
@@ -97,7 +151,7 @@
 - real-world would look something like <img src="logo.jpg" alt="company logo" title="..." ...>
 
 
-### More Attributes
+<h3> More Attributes
 - as you learn the tags, you learn their specific attributes
 - some attributes are shared by all tags
     - class
@@ -116,7 +170,7 @@
         - which order people get to in the page
         - 1 is the highest priority possible (bigger tab index = smaller priority)
 
-### Special Entitites
+<h3> Special Entitites
 - to display used symbols, must use special entities
     - < : &lt
     - > : &gt
@@ -125,7 +179,7 @@
     - cent : &cent
     - & : &amp
 
-### Summary
+<h3> Summary
 - difference between a tag and an attribute
     - look for the <> brackets
 - what two symbols end a self-closing tag
@@ -135,22 +189,22 @@
 
 ## Sematic Tags
 
-### How to design
+<h3> How to design
 - the most important step in web design is design
 - need a good idea of what you want
 
 
-### Using semantic tags
+<h3> Using semantic tags
 - div used to be very popular
     - used to have different class attributes
 
-### <header>
+<h3> <header>
 - introductory or navigational aids
     - title
     - navigation links (wikipedia style)
 
 
-### <nav>
+<h3> <nav>
 - a section of the page that link to other pages or to parts within the page
 
     <nav>
@@ -163,13 +217,13 @@
 - often found in the header tag
 
 
-### <footer>
+<h3> <footer>
 - usually contains info such as copyright data, related documents, links to social medias
 - typically at the bottom of the page, but not required!
     - won't show up at bottom if you place it elsewhere
 
 
-### <figure>
+<h3> <figure>
 - more semantics (and information) than <img>
     - caption <figcaption>
     - multiple multi-media resources
@@ -183,7 +237,7 @@
 
 ## Images
 
-### Image Formats
+<h3> Image Formats
 - many file types are supported
     - JPEG, gif, png
     - SVG and BMP are additional options
@@ -191,7 +245,7 @@
 - size of images is important because they are downloaded
 - every image requires an HTTP Request
 
-### Image Sizes
+<h3> Image Sizes
 - browser will display the image in its original size (which is usually not good)
     - quick solution is to change file or use width/height attributes
 
@@ -202,32 +256,32 @@
     - can also be described in percents (width = "50%")
 
 
-### Favicon
+<h3> Favicon
 - can put next to the title of the page in the tab
 - must go into the <head> section
 - cannot be jpg or gif
 
 
-### Alternative text attributes
+<h3> Alternative text attributes
 - textual alternative to non-text content
 - read by screen readers
 - displayed in place of image (in case it is not available)
 - provides semantic meaning for search engines
 
 
-#### Create good alt text
+<h4> Create good alt text
 - accurate
 - succinct
 - not redundant
 - no "picture of..." and the likes of it
 
 
-### Empty alt text
+<h3> Empty alt text
 - can be alt=""
     - better than skipping the alt text at all
 
 
-### Summary
+<h3> Summary
 - careful with file extensions and file paths
 - for now, style the image inside the html
 
@@ -237,7 +291,7 @@
 - they create the web
 
 
-### Anchor links
+<h3> Anchor links
 
 - syntax: <a href="http://www.umich.edu">University of Michigan</a>
 - <a> tag for Anchor link
@@ -246,7 +300,7 @@
     - content is the clickable part (can be text, image...)
 
 
-### Types of links
+<h3> Types of links
 - absolute
     - <a href="http://intro-webdesign.com/">Web Design</a>
     - links to someone else's page
@@ -259,24 +313,24 @@
 - embedded references
     - link to part of the same file (sections)
 
-### Using Images as the link
+<h3> Using Images as the link
 - clickable component doesn't have to be text
     - <a href="http://www.redcross.org"> <img src="img/img1.png" alt="Logo"/></a>
 
 
-### Usability issues
+<h3> Usability issues
 - make sure that clickable link component has an informative name
 - information in the image should be available to those who can't see the image
 
 
-### Targets
+<h3> Targets
 - anchors take other attributes
     - _self: default action
     - _blank: open in new tab or window (some users don't like)
     - _top and _parent
 
 
-### Summary
+<h3> Summary
 - page without links is extremely rare
 - relative, absolute, internal links
 - use caution with links (for accessibility)
@@ -285,13 +339,13 @@
 
 ## Multimedia (2.07)
 
-### HTML5 multimedia
+<h3> HTML5 multimedia
 - designed to avoid use of extra software/plugins for multimedia
 - not fully implemented (but getting there)
 
 
-### Video element <video>
-- uses a src attribute or embedded <source>
+<h3> Video element <video>
+- uses a src attribute or embedded <source
 - common attributes
     - height, width
     - autoplay
@@ -300,7 +354,7 @@
 - text inside <video>..</video> is displayed if browser cannot support tag
 
 
-### Audio element <audio>
+<h3> Audio element <audio>
 - src attribute to link to audio file (.mp3 or .wav usually)
 - commmon attributes
     - autoplay, controls, loop
@@ -311,14 +365,14 @@
     - .ext#t=5:25 (begin:start)
 
 
-### Plugins
+<h3> Plugins
 - before html5, no standard for multimedia
     - plugins were required
 - some browsers might still require Flash
 
 
 
-### Accessibility issues
+<h3> Accessibility issues
 - make sure to provide links to plugins
 - include text description and closed captioning (or otherequivalent content)
 - multimedia should enhance, not distract
@@ -326,81 +380,7 @@
 
 
 ## Tables (2.08)
-
-### Table Design
-- sketch the layout before you code
-- decide on the number of rows and columns
-- decide if any rows/columns will span multiple cells
-
-
-### Tags
-- <table> as container tag
-- <tr>..</tr> the rows
-- <td>..</td> the columns
-
-
-### Table heading
-- some people use bold fonts
-- we'll use semantic tags
-    - <th>..</th>, table heading
-
-
-### Captions
-- link text to a table
-- <caption>
-
-
-### Summary
-- tables should only be used for tabular data
-- draw your table before you code it
-- check for unclosed tags
-
-
-
-
-
-## Useful Tags (2.09)
-
-
-### Choosing tags
-- block tags
-    - generic <p> <div>
-    - semantic <header> <nav> <footer> <figure>
-    - should use semantic tags as much as possible
-
-### Block tags (some unknown)
-- containers
-    - <article> <aside> <section> <main>
-- <hr>
-- <address>
-- <blockquote> which has a cite attribute
-- <details> with <summary>
-
-
-### Inline tags
-- <span> original inline tag for plain text
-- <cite>
-- <abbr>
-- <time>
-- <code>
-- <sub> and <sup>
-
-
-### More advanced tags
-- <button>
-- <meter>
-- <progress>
-- <iframe> often used to embed documents
-    - not very portable
-- <bdo> attribute dir (ltr or rtl), bidirectional orientation
-- <map> with <area> creates clickable element in image but requires Javascript
-
-
-### Summary
-- use the most specific tag possible
-- sometimes tags don't work
-    - go through a validator, might be a syntax error
-    - run the code in multiple browsers (good idea, even if it looked good)
+-->
 
 
 
@@ -409,3 +389,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
